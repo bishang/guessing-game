@@ -1,5 +1,5 @@
 'use strict';
-//Does Bessie have a twin?
+
 var twin = prompt('Does Bessie have a twin?');
 console.log('Twin Guess:', twin);
 
@@ -11,7 +11,6 @@ if(twin.toUpperCase() === 'YES' || twin.toLowerCase() === 'y') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
-//Does Bessie drive a Range Rover?
 var drive = prompt('Does Bessie drive a Range rover?');
 console.log('Car guess:', drive);
 
@@ -23,7 +22,6 @@ if(drive.toUpperCase() === 'NO' || drive.toLowerCase() === 'n') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
-//Has Bessie ever traveled outside of the country?
 var travel = prompt('Has Bessie ever traveled outside of the country?');
 console.log('Travel guess:', travel);
 
@@ -35,7 +33,6 @@ if(travel.toUpperCase() === 'YES' || travel.toLowerCase() === 'y') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
-//Was Bessie born in Seattle?
 var born = prompt('Was Bessie born in Seattle?');
 console.log('Born guess:', born)
 
@@ -47,7 +44,6 @@ if(born.toUpperCase() === 'YES' || born.toLowerCase() === 'y') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
-//Is Bessie's favorite dog the Belgium Malinois?
 var dog = prompt('Is Bessie\'s favorite dog the Belgian Malinois?');
 console.log('Dog guess:', dog);
 
@@ -57,4 +53,27 @@ if(drive.toUpperCase() === 'NO' || drive.toLowerCase() === 'n') {
   alert('No way! She LOVES corgis.');
 } else {
   alert('Sorry, I didn\'t recognize your answer.')
+}
+
+var year;
+yearCounter = 0;
+
+while (year !== 2006) {
+  year = parseInt(prompt('What year did Bessie get her drivers license?'));
+  console.log('Year guessed:', year);
+
+  if (year < 2006) {
+    alert('Sorry, she got it after that year.');
+    yearCounter++;
+  } else if (year > 2006) {
+    alert('Sorry, she got it before that year.');
+    yearCounter++;
+  } else if (isNaN(year) || year === null) {
+    alert('That isn\'t a year.');
+    yearCounter++;
+  }
+}
+
+if (year === 2006) {
+  alert('Correct!');
 }
