@@ -55,8 +55,6 @@ if(drive.toUpperCase() === 'NO' || drive.toLowerCase() === 'n') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
-// 6th Question
-
 var year;
 
 for (var i = 0; i < 4; i++) {
@@ -75,8 +73,6 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-// 7th Question
-
 var food = ['pizza', 'mac and cheese', 'sphaghetti', 'ramen']
 var answer = prompt('What is one of my favorite foods?');
 var flag;
@@ -86,9 +82,7 @@ for (var i = 0; i < 6; i++) {
     alert('Correct!');
     break;
     flag = true;
+  } if (!flag) {
+    alert('Oops! Try again.');
   }
-}
-
-if (!flag) {
-  alert('you wrong');
 }
