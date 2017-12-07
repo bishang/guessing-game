@@ -55,6 +55,8 @@ if(drive.toUpperCase() === 'NO' || drive.toLowerCase() === 'n') {
   alert('Sorry, I didn\'t recognize your answer.')
 }
 
+// 6th Question
+
 var year;
 yearCounter = 0;
 
@@ -62,7 +64,9 @@ while (year !== 2006) {
   year = parseInt(prompt('What year did Bessie get her drivers license?'));
   console.log('Year guessed:', year);
 
-  if (year < 2006) {
+  if (year === 2006) {
+    alert('Correct!');
+  } else if (year < 2006) {
     alert('Sorry, she got it after that year.');
     yearCounter++;
   } else if (year > 2006) {
@@ -71,9 +75,8 @@ while (year !== 2006) {
   } else if (isNaN(year) || year === null) {
     alert('That isn\'t a year.');
     yearCounter++;
+  } else if (yearCounter === 4) {
+    break;
+    alert('You have guessed too many times.');
   }
-}
-
-if (year === 2006) {
-  alert('Correct!');
 }
