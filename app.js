@@ -74,3 +74,21 @@ for (var i = 0; i < 4; i++) {
     alert('That isn\'t a year.');
   }
 }
+
+// 7th Question
+
+var food = ['pizza', 'mac and cheese', 'sphaghetti', 'ramen']
+var answer = prompt('What is one of my favorite foods?');
+var flag;
+
+for (var i = 0; i < 6; i++) {
+  if (answer === food[i]) {
+    alert('Correct!');
+    break;
+    flag = true;
+  }
+}
+
+if (!flag) {
+  alert('you wrong');
+}
