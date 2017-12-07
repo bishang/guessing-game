@@ -73,16 +73,23 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-var food = ['pizza', 'mac and cheese', 'sphaghetti', 'ramen']
-var answer = prompt('What is one of my favorite foods?');
-var flag;
 
-for (var i = 0; i < 6; i++) {
-  if (answer === food[i]) {
-    alert('Correct!');
-    break;
-    flag = true;
-  } if (!flag) {
+var guesses = 6;
+var food = ['pizza', 'mac and cheese', 'sphaghetti', 'ramen', 'sushi', 'burgers']
+
+while (guesses > 0) {
+  var answer = prompt('What is one of my favorite foods?');
+  guesses--;
+
+  for (var i = 0; i < food.length; i++) {
+    if (answer === food[i]) {
+      alert('Correct!');
+      guesses = -1;
+      break;
+    }
+  }
+
+  if (guesses > 0) {
     alert('Oops! Try again.');
   }
 }
