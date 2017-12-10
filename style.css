@@ -46,3 +46,24 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* My CSS is after here */
+
+nav li {
+  display: inline-block;
+  margin: 20px;
+}
+
+header {
+  width: 960px;
+  margin: 30px auto;
+}
+
+nav {
+  background-color: #888;
+}
+
+nav ul {
+  width: 960px;
+  margin: 0 auto;
+}
