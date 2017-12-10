@@ -105,7 +105,3 @@ function favoriteFoods() {
     }
   }
 }
-
-
-hasTwin();
-rangeRover();
