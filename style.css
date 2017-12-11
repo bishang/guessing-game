@@ -49,14 +49,24 @@ table {
 
 /* My CSS is after here */
 
-nav li {
-  display: inline-block;
-  margin: 20px;
+body {
+	font-family: sans-serif;
 }
 
 header {
-  width: 960px;
-  margin: 30px auto;
+	width: 960px;
+	margin: 20px auto;
+}
+
+container {
+	width: 960px;
+	margin: 20px auto;
+	background: #000;
+}
+
+nav li {
+  display: inline-block;
+  margin: 20px;
 }
 
 nav {
